@@ -1,0 +1,24 @@
+{
+  "name": "amiculum-style",
+  "version": "1.0.0",
+  "description": "In-house coding styles for AMICULUM Digital. Based on the Airbnb Style Guides.",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/amiculum-digital/styleguide.git"
+  },
+  "keywords": [
+    "style guide",
+    "lint",
+    "airbnb",
+    "es6",
+    "es2015",
+    "react",
+    "jsx"
+  ],
+  "author": "Harrison Shoff <hi@hshoff.com> (https://twitter.com/hshoff)",
+  "license": "MIT",
+  "homepage": "https://github.com/amiculum-digital/styleguide"
+}
