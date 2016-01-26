@@ -20,6 +20,7 @@ Configs are available for eslint, jshint and Sublime Text
  
 ## Gulp and Grunt tasks
 
+ - [Sample Grunt tasks](grunt) for sass-lint and W3C validation
  - *TODO: Standard Gulp task for W3C HTML Validation*
  - *TODO: Standard Gulp task for CSS & Sass linting*
  - *TODO: Standard Gulp task for JavaScript and React linting*
