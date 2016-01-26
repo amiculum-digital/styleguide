@@ -6,7 +6,7 @@ module.exports = functionm(grunt) {
             options: {
                 configFile: 'config/.sass-lint.yml',
             },
-            target: ['app/assets/sass/*.scss', 'app/mobile/sass/*.scss']
+            target: ['app/assets/sass/*.scss']
         },
         validation: {
             options: {
