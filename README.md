@@ -1,6 +1,6 @@
 # AMICULUM Digital Coding Style Guides
 
-General coding guidelines based on the great Airbnb [JavaScript](https://github.com/airbnb/css) and [CSS](https://github.com/airbnb/javascript) guides.
+General coding guidelines based on the great Airbnb [JavaScript](https://github.com/airbnb/javascript) and [CSS](https://github.com/airbnb/css) guides.
 
 ## Avaiable Guides
 
