@@ -5,7 +5,7 @@ General coding guidelines based on the great Airbnb [JavaScript](https://github.
 ## Avaiable Guides
 
  - [JavaScript](javascript/)
- - [React](react/)
+ - [React](javascript/react/)
  - [CSS & Sass](css/)
  
 ## Linters
