@@ -5,6 +5,7 @@ General coding guidelines based on the great Airbnb [JavaScript](https://github.
 ## Avaiable Guides
 
  - [JavaScript](javascript/)
+ - [JavaScript (ES5)](javascript/es5)
  - [React](javascript/react/)
  - [CSS & Sass](css/)
  

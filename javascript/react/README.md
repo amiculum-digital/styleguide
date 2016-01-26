@@ -1,4 +1,4 @@
-# Airbnb React/JSX Style Guide
+# AMICULUM Digital React/JSX Style Guide
 
 *Based on the [Airbnb React Style Guide](https://github.com/airbnb/javascript/react)*
 
