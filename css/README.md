@@ -12,9 +12,11 @@
     - [Formatting](#formatting)
     - [Comments](#comments)
     - [OOCSS and BEM](#oocss-and-bem)
+    - [Namespaces](#namespaces)
     - [ID Selectors](#id-selectors)
     - [JavaScript hooks](#javascript-hooks)
   1. [Sass](#sass)
+    - [Structure](#itcss)
     - [Syntax](#syntax)
     - [Ordering](#ordering-of-property-declarations)
     - [Mixins](#mixins)
@@ -109,7 +111,7 @@ Finally, properties are what give the selected elements of a rule declaration th
   - Uses of z-index
   - Compatibility or browser-specific hacks
 
-### OOCSS and BEM
+### OOCSS, BEM and Namespaces
 
 We encourage some combination of OOCSS and BEM for these reasons:
 
@@ -153,6 +155,19 @@ We encourage some combination of OOCSS and BEM for these reasons:
   * `.listing-card__title` is an “element” and represents a descendant of `.listing-card` that helps compose the block as a whole.
   * `.listing-card--featured` is a “modifier” and represents a different state or variation on the `.listing-card` block.
 
+### Namespaces
+
+**The Namespaces**, BEM has already provided great clarity to the classes and adding namespaces on top will bring BEM up another notch that give rich meaning in our HTML. This level of clarity will gives the team greater confidence when reworking existing markup, and helps us to make better and more informed decisions. With this concept self-documenting, transparent UI code are achieved through namespacing.
+
+Below are the 3 namespaces used within the team and its brief description:
+
+  * `o-`: Signify that something is an Object, and that it may be used in any number of unrelated contexts to the one you can currently see it in. Making modifications to these types of class could potentially have knock-on effects in a lot of other unrelated places. Tread carefully.
+  * `c-`: Signify that something is a Component. This is a concrete, implementation-specific piece of UI. All of the changes you make to its styles should be detectable in the context you’re currently looking at. Modifying these styles should be safe and have no side effects.
+  * `u-`: Signify that this class is a Utility class. It has a very specific role (often providing only one declaration) and should not be bound onto or changed. It can be reused and is not tied to any specific piece of UI. You will probably recognise this namespace from libraries and methodologies like [SUIT](https://suitcss.github.io/).
+  * `js[camelCaseElement]`: Signify that this piece of the DOM has some behaviour acting upon it, and that JavaScript binds onto it to provide that behaviour. If you’re not a developer working with JavaScript, leave these well alone. To name the element with behaviour, camelcase naming is used which differ from [Harry Roberts' article](http://csswizardry.com/2015/03/more-transparent-ui-code-with-namespaces/) so that on first look it will be known that the element has some JavaScript coding involve that stands out from the BEM naming.
+
+For more examples and explainations on this subject, read Harry Roberts' [More Transparent UI Code with Namespaces](http://csswizardry.com/2015/03/more-transparent-ui-code-with-namespaces/).
+
 ### ID selectors
 
 While it is possible to select elements by ID in CSS, it should generally be considered an anti-pattern. ID selectors introduce an unnecessarily high level of [specificity](https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity) to your rule declarations, and they are not reusable.
@@ -170,6 +185,19 @@ We recommend creating JavaScript-specific classes to bind to, prefixed with `.js
 ```
 
 ## Sass
+
+### ITCSS
+
+**ITCSS**: Inverted Triangle CSS 
+
+A lot of methodologies try and avoid or **ignore** CSS' 'features'. ITCSS makes them work to **our advantage**. ITCSS is a **sane, scalable, managed** architecture for CSS.
+
+* Manages source order.
+* Filters explicitness.
+* Tames the cascade.
+* Sanitises inheritance.
+
+For more on this in-depth explanation and understanding, read [CSS Wizardry's talk on ITCSS](http://csswizardry.net/talks/2014/11/itcss-dafed.pdf).
 
 ### Syntax
 
