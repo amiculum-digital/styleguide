@@ -11,8 +11,7 @@
   1. [CSS](#css)
     - [Formatting](#formatting)
     - [Comments](#comments)
-    - [OOCSS and BEM](#oocss-and-bem)
-    - [Namespaces](#namespaces)
+    - [OOCSS, BEM and Namespaces](#oocss-bem-and-namespaces)
     - [ID Selectors](#id-selectors)
     - [JavaScript hooks](#javascript-hooks)
   1. [Sass](#sass)
@@ -154,8 +153,6 @@ We encourage some combination of OOCSS and BEM for these reasons:
   * `.listing-card` is the “block” and represents the higher-level component
   * `.listing-card__title` is an “element” and represents a descendant of `.listing-card` that helps compose the block as a whole.
   * `.listing-card--featured` is a “modifier” and represents a different state or variation on the `.listing-card` block.
-
-### Namespaces
 
 **The Namespaces**, BEM has already provided great clarity to the classes and adding namespaces on top will bring BEM up another notch that give rich meaning in our HTML. This level of clarity will gives the team greater confidence when reworking existing markup, and helps us to make better and more informed decisions. With this concept self-documenting, transparent UI code are achieved through namespacing.
 
