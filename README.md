@@ -2,7 +2,7 @@
 
 General coding guidelines based on the great Airbnb [JavaScript](https://github.com/airbnb/javascript) and [CSS](https://github.com/airbnb/css) guides.
 
-## Avaiable Guides
+## Available Guides
 
  - [JavaScript](javascript/)
  - [JavaScript (ES5)](javascript/es5)
